@@ -64,7 +64,7 @@ topMenuEls.forEach(menuEl => {
         if (showingSubMenu) {
             buildSubMenu(menuLinks)
             subMenuEl.style.top = '100%';
-            mainEl.innerHTML = '<h1>SEI Rocks!</h1>';
+            mainEl.innerHTML = `<h1>SEI Rocks!</h1>`;
         } else {
             subMenuEl.style.top = 0;
             mainEl.innerHTML = '<h1>about</h1>';
@@ -85,12 +85,8 @@ topMenuEls.forEach(menuEl => {
                 }
         }})
                 }
-
-
     })
             
-
-
 subMenuEl.addEventListener('click', (e) => {
     e.preventDefault()
     if (e.target.tagName !== 'A') {
